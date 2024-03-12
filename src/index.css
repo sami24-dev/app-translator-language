@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+	background-image: url('./assets/hero_img.jpg');
+	font-family: 'DM Sans Variable', sans-serif;
+}
+
+#root {
+	@apply flex justify-center items-center flex-col w-full bg-backgraundContain bg-no-repeat bg-contain
+}
+.main__parent {
+	@apply flex flex-col w-full px-20 xl:flex-row justify-center items-center xl:gap-x-4 xl:gap-y-0 gap-y-4 mt-16 
+}
+.card {
+	@apply flex flex-col min-w-80 w-full xl:min-w-96 xl:w-full xl:min-h-80 xl:max-h-[350px] p-6 bg-grayLigthCard rounded-2xl border border-grayDark text-xs md:text-sm lg:text-base font-bold
+}
+.card__receiver {
+	@apply bg-grayDarkCard
+}
+.card__header {
+	@apply flex gap-1
+}
+.card__receiver__header {
+	@apply flex justify-between items-center
+}
+.header__button {
+	@apply text-grayDarktext p-2 rounded-xl transition-colors duration-300 ease-in-out hover:text-grayLightext hover:bg-grayDarktext
+}
+.main__textarea {
+	@apply w-full min-h-32 max-h-40 resize-none appearance-none bg-transparent outline-none text-lightText 
+}
+.card__footer {
+	@apply flex justify-between items-end
+}
+.footer__item {
+	@apply flex gap-2
+}
+.footer__item--submit {
+	@apply flex-col items-end
+}
+.item__button {
+	@apply flex justify-center items-center outline-none border-[0.13rem] rounded-md transition-all duration-300 ease-in-out
+}
+.item__button--hover {
+ @apply  border-grayDark text-grayDark p-[2px]  bg-transparent  hover:text-blueLight hover:border-blueLight hover:scale-105
+}
+.item__caracters {
+	@apply text-grayDark
+}
+.item__button--traduction {
+	@apply bg-blueDark border border-transparent py-1 px-3 text-whiteText hover:border-blueLight
+}
