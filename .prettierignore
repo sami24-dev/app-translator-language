@@ -1,0 +1,7 @@
+# Ignore artifacts:
+build
+package.json
+package-look.json
+postcss.config.js
+tsconfig.json
+README.md
